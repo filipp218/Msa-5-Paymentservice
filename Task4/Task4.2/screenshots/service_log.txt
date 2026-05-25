@@ -1,0 +1,20 @@
+payment-orchestrator-1  | 2026-05-24 12:23:56,457 INFO payment-orchestrator [HANDLER] CREATE_PAYMENT paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697 amount=1500 fraudDecision=allow
+payment-orchestrator-1  | 2026-05-24 12:23:56,488 INFO payment-orchestrator [HANDLER] DEBIT_USER_ACCOUNT paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697 amount=1500
+payment-orchestrator-1  | 2026-05-24 12:23:56,501 INFO payment-orchestrator [HANDLER] REQUEST_FRAUD_CHECK paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697 scenario=allow
+payment-orchestrator-1  | 2026-05-24 12:23:56,547 INFO payment-orchestrator [HANDLER] TRANSFER_TO_COUNTERPARTY paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697 amount=1500 transferFailed=False
+payment-orchestrator-1  | 2026-05-24 12:23:56,559 INFO payment-orchestrator [HANDLER] COMPLETE_PAYMENT paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697 pivot=irreversible
+payment-orchestrator-1  | 2026-05-24 12:23:56,572 INFO payment-orchestrator [HANDLER] NOTIFY_CLIENT paymentId=d1b24391-e7a3-46b5-9416-7d0245fe8697
+payment-orchestrator-1  | 2026-05-24 12:23:59,503 INFO payment-orchestrator [HANDLER] CREATE_PAYMENT paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c amount=1500 fraudDecision=deny
+payment-orchestrator-1  | 2026-05-24 12:23:59,526 INFO payment-orchestrator [HANDLER] DEBIT_USER_ACCOUNT paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c amount=1500
+payment-orchestrator-1  | 2026-05-24 12:23:59,538 INFO payment-orchestrator [HANDLER] REQUEST_FRAUD_CHECK paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c scenario=deny
+payment-orchestrator-1  | 2026-05-24 12:23:59,558 INFO payment-orchestrator [HANDLER] REFUND_USER_ACCOUNT paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c amount=1500
+payment-orchestrator-1  | 2026-05-24 12:23:59,569 INFO payment-orchestrator [HANDLER] CANCEL_PAYMENT paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c
+payment-orchestrator-1  | 2026-05-24 12:23:59,585 INFO payment-orchestrator [HANDLER] NOTIFY_SECURITY paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c
+payment-orchestrator-1  | 2026-05-24 12:23:59,585 INFO payment-orchestrator [HANDLER] NOTIFY_CLIENT paymentId=e855dd98-e98e-4102-8be3-dc4c90dfc65c
+payment-orchestrator-1  | 2026-05-24 12:24:02,543 INFO payment-orchestrator [HANDLER] CREATE_PAYMENT paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 amount=1500 fraudDecision=manual
+payment-orchestrator-1  | 2026-05-24 12:24:02,557 INFO payment-orchestrator [HANDLER] DEBIT_USER_ACCOUNT paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 amount=1500
+payment-orchestrator-1  | 2026-05-24 12:24:02,569 INFO payment-orchestrator [HANDLER] REQUEST_FRAUD_CHECK paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 scenario=manual
+payment-orchestrator-1  | 2026-05-24 12:24:02,587 INFO payment-orchestrator [HANDLER] MANUAL_REVIEW_WAIT paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 manualDecision=approved note=operator decision emulated
+payment-orchestrator-1  | 2026-05-24 12:24:02,600 INFO payment-orchestrator [HANDLER] TRANSFER_TO_COUNTERPARTY paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 amount=1500 transferFailed=False
+payment-orchestrator-1  | 2026-05-24 12:24:02,635 INFO payment-orchestrator [HANDLER] COMPLETE_PAYMENT paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04 pivot=irreversible
+payment-orchestrator-1  | 2026-05-24 12:24:02,679 INFO payment-orchestrator [HANDLER] NOTIFY_CLIENT paymentId=54805aef-4102-4ede-b35f-b5e0fdf59e04
